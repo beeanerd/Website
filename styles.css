@@ -3,9 +3,38 @@ body {
   font-family: "Montserrat", sans-serif;
   text-align: center;
   margin: 0;
+  padding: 0;
 }
 p {
   font-family: "Merriweather", serif;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 150%;
+  font-size: 24px;
+  color: #56909e;
+}
+h1 {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 96px;
+  line-height: 125%;
+  color: #56909e;
+
+}
+h2 {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 125%;
+  color: #56909e;
+}
+h3 {
+  line-height: 100%
+  font-weight: normal;
+  font-size: 36px;
+  margin: 0;
+  color: #56909e;
 }
 #top {
   grid-area: top;
@@ -35,24 +64,32 @@ p {
 .home {
 
 }
-h1 {
-  font-style: normal;
-  font-weight: 600;
-  font-size: 96px;
-  line-height: 125%;
-  color: #56909e;
-
+.content {
+  position: relative;
 }
-h3 {
-  line-height: 100%
-  font-style: normal;
-  font-weight: normal;
-  font-size: 36px;
-  margin: 0;
-  color: #56909e;
+.rectangle {
+  background-color: #56909e;
 }
-.about {
-
+#about-rect {
+  position: absolute;
+  left: -5vh;
+  height: 65px;
+  width: 10px;
+}
+#about {
+  padding: 5vh;
+}
+#about > img {
+  float: right;
+  margin: 2.5vh;
+  max-height: 75vh;
+}
+.content > h2, p {
+  margin: 2rem;
+  text-align: left;
+}
+.clearfix {
+  overflow: auto;
 }
 .skills {
 
@@ -61,9 +98,10 @@ h3 {
 
 }
 #navigation {
+  height: 15vh;
+  box-sizing: border-box;
   overflow: hidden;
   background-color: #56909e;
-  height: 10vh;
   padding: 2.5vh 5vh;
   display: block;
   line-height: 10vh;
@@ -71,25 +109,40 @@ h3 {
   font-style: normal;
   font-weight: 600;
   font-size: 24px;
-
-
-}
-.logo {
-  float: left;
-  color: #F4FEFF;
-  font-style: normal;
-  font-weight: 800;
-  font-size: 36px;
-  text-decoration: none;
-  letter-spacing: -0.2em;
+  z-index: 9999;
 }
 #nav-elements {
   float: right;
   display: block;
   justify-content: space-between;
 }
+.logo {
+  float: left;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  color: #F4FEFF;
+  text-decoration: none;
+  letter-spacing: -0.2em;
+}
 #nav-elements > a {
   text-decoration: none;
-  margin: 20px;
   color: #F4FEFF;
+  margin: 20px;
+}
+#nav-elements > a:hover {
+  transition-duration: 350ms;
+  color: #FF38C7;
+}
+.logo:hover {
+  transition-duration: 350ms;
+  color: #FF38C7;
+}
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.sticky + #about {
+  padding-top: calc(15vh + 2rem);
 }
