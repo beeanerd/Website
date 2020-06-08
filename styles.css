@@ -1,11 +1,34 @@
 body {
   background-color: #F4FEFF;
   font-family: "Montserrat", sans-serif;
+  text-align: center;
 }
 p {
   font-family: "Merriweather", serif;
 }
+#top {
+  grid-area: top;
+}
+#left {
+  grid-area: left;
+}
+#right {
+  text-align: right;
+  grid-area: right;
+}
 .landing {
+  justify-content: center;
+  text-align: left;
+  display: grid;
+  grid-template-columns: repeat(3, max-content);
+  grid-template-rows: 70% 15% 15%;
+  grid-template-areas:
+    'top top top'
+    'left left .'
+    '. right right'
+  ;
+}
+.home {
 
 }
 h1 {
@@ -20,7 +43,7 @@ h3 {
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
-  line-height: 125%;
+  margin: 0;
   color: #76B3BB;
 }
 .about {
