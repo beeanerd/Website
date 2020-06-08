@@ -2,6 +2,7 @@ body {
   background-color: #F4FEFF;
   font-family: "Montserrat", sans-serif;
   text-align: center;
+  margin: 0;
 }
 p {
   font-family: "Merriweather", serif;
@@ -20,12 +21,15 @@ p {
   justify-content: center;
   text-align: left;
   display: grid;
+  height: 85vh;
   grid-template-columns: repeat(3, max-content);
-  grid-template-rows: 70% 15% 15%;
+  grid-template-rows: 10% 60% 10% 10% 10%;
   grid-template-areas:
+    '. . .'
     'top top top'
     'left left .'
     '. right right'
+    '. . .'
   ;
 }
 .home {
@@ -36,15 +40,16 @@ h1 {
   font-weight: 600;
   font-size: 96px;
   line-height: 125%;
-  color: #76B3BB;
+  color: #56909e;
 
 }
 h3 {
+  line-height: 100%
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
   margin: 0;
-  color: #76B3BB;
+  color: #56909e;
 }
 .about {
 
@@ -55,6 +60,36 @@ h3 {
 .main {
 
 }
-.navigation {
+#navigation {
+  overflow: hidden;
+  background-color: #56909e;
+  height: 10vh;
+  padding: 2.5vh 5vh;
+  display: block;
+  line-height: 10vh;
+  font-family: 'Montserrat', sans-serif;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
 
+
+}
+.logo {
+  float: left;
+  color: #F4FEFF;
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  text-decoration: none;
+  letter-spacing: -0.2em;
+}
+#nav-elements {
+  float: right;
+  display: block;
+  justify-content: space-between;
+}
+#nav-elements > a {
+  text-decoration: none;
+  margin: 20px;
+  color: #F4FEFF;
 }
