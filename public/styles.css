@@ -132,11 +132,11 @@ h3 {
 }
 #nav-elements > a:hover {
   transition-duration: 350ms;
-  color: #FF38C7;
+  color: #5d569e;
 }
 .logo:hover {
   transition-duration: 350ms;
-  color: #FF38C7;
+  color: #5d569e;
 }
 .sticky {
   position: fixed;
