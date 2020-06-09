@@ -10,13 +10,13 @@ p {
   font-style: normal;
   font-weight: 300;
   line-height: 150%;
-  font-size: 1.5rem;
+  font-size: 1.5em;
   color: #56909e;
 }
 h1 {
   font-style: normal;
   font-weight: 600;
-  font-size: 6rem;
+  font-size: 6em;
   line-height: 125%;
   color: #56909e;
 
@@ -25,14 +25,14 @@ h2 {
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: normal;
-  font-size: 4rem;
+  font-size: 4em;
   line-height: 125%;
   color: #56909e;
 }
 h3 {
   line-height: 100%
   font-weight: normal;
-  font-size: 2.25rem;
+  font-size: 2.25em;
   margin: 0;
   color: #56909e;
 }
@@ -42,10 +42,12 @@ h3 {
 }
 #left {
   grid-area: left;
+  padding: 2.5vh;
 }
 #right {
   text-align: right;
   grid-area: right;
+  padding: 2.5vh;
 }
 .landing {
   justify-content: center;
@@ -121,7 +123,7 @@ h3 {
   float: left;
   font-style: normal;
   font-weight: 800;
-  font-size: 36px;
+  font-size: 2.25em;
   color: #F4FEFF;
   text-decoration: none;
   letter-spacing: -0.2em;
@@ -146,4 +148,33 @@ h3 {
 }
 .sticky + #about {
   padding-top: calc(15vh + 2rem);
+}
+@media screen and (max-width: 860px) {
+  #about {
+    margin: auto;
+  }
+  #about > img{
+    float: none;
+    max-width: 85%;
+    height: auto;
+  }
+  #navigation {
+    font-size: 1.25em;
+  }
+}
+@media screen and (max-width: 600px){
+  html {
+    font-size: 75%;
+  }
+  #navigation {
+    font-size: 1.35em;
+  }
+}
+@media screen and (max-width: 480px){
+  html {
+    font-size: 75%;
+  }
+  #navigation {
+    font-size: 1em;
+  }
 }
