@@ -1,5 +1,6 @@
 {
   "projects": {
-    "default": "alex-whitlock"
+    "default": "alex-whitlock",
+    "staging": "alex-whitlock-staging"
   }
 }
