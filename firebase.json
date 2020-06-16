@@ -5,6 +5,23 @@
       "firebase.json",
       "**/.*",
       "**/node_modules/**"
+    ] ,
+    "rewrites": [ {
+      "source": "/photos",
+      "destination": "/photos.html"
+    } , {
+      "source": "/projects",
+      "destination": "/projects.html"
+    } , {
+      "source": "/contact",
+      "destination": "/contact.html"
+    } , {
+      "source": "/home",
+      "destination": "/index.html"
+    } , {
+      "source": "**",
+      "destination": "/photos.html"
+    }
     ]
   }
 }
